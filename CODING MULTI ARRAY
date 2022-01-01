@@ -1,0 +1,30 @@
+package myArray;
+
+public class MultiArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int totalsum;
+		int sum;
+		int a[][]= {
+				{5, 20, 30},
+				{6, 15, 45},
+				{56, 78, 89}};
+				
+	totalsum=0;
+		for(int x=0;x<a.length;x++)
+		{
+			sum=0;
+			
+			for(int y=0;y<a.length;y++)
+			sum = sum + a[x][y];
+		
+		totalsum+=sum;
+		
+		System.out.println("sum" + sum);
+		System.out.println("t"+totalsum);
+
+	}
+	}
+}

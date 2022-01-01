@@ -1,0 +1,46 @@
+package myArray;
+
+public class Array2 {
+
+
+		public	static void  equality_checking_two_arrays(int[] sizes_A, int[] sizes_B)
+		  {
+		  boolean  test = true;
+
+		  if(sizes_A.length == sizes_B.length)
+		  {
+		  for (int i  = 0; i < sizes_A.length; i++)
+		  {
+		  if(sizes_A[i] != sizes_B[i])
+		  {
+		  test = true;
+		  }
+		  }
+		  }
+		  else
+		  {
+		  test  = false;
+		  }
+
+		  if  (test)
+		  {
+		  System.out.println("Both set have equal sizes :)");
+		  }
+		  else
+		  {
+		  System.out.println("Both set have different sizes :(");
+		  }
+		  }
+		
+		  public static void  main(String[] args)
+	
+		  {
+		  int[] sizes1 =  {56, 32, 31, 28, 25};
+		  int[] sizes2 =  {20, 60, 67, 65, 34};
+		  int[] sizes3 =  {70, 58, 56, 89, 90};
+
+		  equality_checking_two_arrays(sizes1,  sizes3);
+		  equality_checking_two_arrays(sizes2, sizes3);
+	}
+
+}
